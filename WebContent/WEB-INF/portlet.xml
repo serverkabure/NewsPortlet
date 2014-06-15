@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+	version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+	<portlet>
+		<portlet-name>jsf11</portlet-name>
+		<portlet-class>com.sun.faces.portlet.FacesPortlet</portlet-class>
+
+		<init-param>
+			<description>Portlet init page</description>
+			<name>com.sun.faces.portlet.INIT_VIEW</name>
+			<value>/WEB-INF/jsf11/view.jsp</value>
+		</init-param>
+
+		<init-param>
+			<description>Portlet edit page</description>
+			<name>com.sun.faces.portlet.INIT_EDIT</name>
+			<value>/WEB-INF/jsf11/edit.jsp</value>
+		</init-param>
+
+		<init-param>
+			<description>Portlet Help page</description>
+			<name>com.sun.faces.portlet.INIT_HELP</name>
+			<value>/WEB-INF/jsf11/help.jsp</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>EDIT</portlet-mode>
+			<portlet-mode>HELP</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>jsf11</title>
+		</portlet-info>
+	</portlet>
+
+	<!-- <portlet> -->
+	<!-- <description>JSF GuessNumber Portlet based on JSF 1.1</description> -->
+	<!-- <portlet-name>guessnumber</portlet-name> -->
+	<!-- <display-name>JSFGuessNumberPortlet</display-name> -->
+	<!-- <portlet-class>com.sun.faces.portlet.FacesPortlet</portlet-class> -->
+
+	<!-- <init-param> -->
+	<!-- <description>Portlet init page</description> -->
+	<!-- <name>com.sun.faces.portlet.INIT_VIEW</name> -->
+	<!-- <value>/greeting.jsp</value> -->
+	<!-- </init-param> -->
+
+	<!-- <init-param> -->
+	<!-- <description>Portlet edit page</description> -->
+	<!-- <name>com.sun.faces.portlet.INIT_EDIT</name> -->
+	<!-- <value>/edit.jsp</value> -->
+	<!-- </init-param> -->
+
+	<!-- <init-param> -->
+	<!-- <description>Portlet Help page</description> -->
+	<!-- <name>com.sun.faces.portlet.INIT_HELP</name> -->
+	<!-- <value>/help.jsp</value> -->
+	<!-- </init-param> -->
+
+	<!-- <supports> -->
+	<!-- <mime-type>text/html</mime-type> -->
+	<!-- <portlet-mode>VIEW</portlet-mode> -->
+	<!-- <portlet-mode>EDIT</portlet-mode> -->
+	<!-- <portlet-mode>HELP</portlet-mode> -->
+	<!-- </supports> -->
+	<!-- <supported-locale>en</supported-locale> -->
+	<!-- <supported-locale>de</supported-locale> -->
+	<!-- <supported-locale>es</supported-locale> -->
+	<!-- <supported-locale>fr</supported-locale> -->
+	<!-- <supported-locale>ja</supported-locale> -->
+	<!-- <supported-locale>ko</supported-locale> -->
+	<!-- <supported-locale>zh</supported-locale> -->
+	<!-- <supported-locale>zh_CN</supported-locale> -->
+	<!-- <supported-locale>zh_TW</supported-locale> -->
+
+	<!-- <portlet-info> -->
+	<!-- <title>JSF GuessNumber Portlet 1.1</title> -->
+	<!-- <short-title>guessnumber</short-title> -->
+	<!-- </portlet-info> -->
+	<!-- </portlet> -->
+
+</portlet-app>
