@@ -35,6 +35,39 @@
 		</portlet-info>
 	</portlet>
 
+	<portlet>
+		<portlet-name>springjsf</portlet-name>
+		<portlet-class>com.sun.faces.portlet.FacesPortlet</portlet-class>
+
+		<init-param>
+			<description>Portlet init page</description>
+			<name>com.sun.faces.portlet.INIT_VIEW</name>
+			<value>/WEB-INF/springjsf/view.jsp</value>
+		</init-param>
+
+		<init-param>
+			<description>Portlet edit page</description>
+			<name>com.sun.faces.portlet.INIT_EDIT</name>
+			<value>/WEB-INF/springjsf/edit.jsp</value>
+		</init-param>
+
+		<init-param>
+			<description>Portlet Help page</description>
+			<name>com.sun.faces.portlet.INIT_HELP</name>
+			<value>/WEB-INF/springjsf/help.jsp</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>EDIT</portlet-mode>
+			<portlet-mode>HELP</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>springjsf</title>
+		</portlet-info>
+	</portlet>
+
 	<!-- <portlet> -->
 	<!-- <description>JSF GuessNumber Portlet based on JSF 1.1</description> -->
 	<!-- <portlet-name>guessnumber</portlet-name> -->
