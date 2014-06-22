@@ -36,25 +36,25 @@
 	</portlet>
 
 	<portlet>
-		<portlet-name>springjsf</portlet-name>
+		<portlet-name>springfaces</portlet-name>
 		<portlet-class>com.sun.faces.portlet.FacesPortlet</portlet-class>
 
 		<init-param>
 			<description>Portlet init page</description>
 			<name>com.sun.faces.portlet.INIT_VIEW</name>
-			<value>/WEB-INF/springjsf/view.jsp</value>
+			<value>/WEB-INF/springfaces/view.jsp</value>
 		</init-param>
 
 		<init-param>
 			<description>Portlet edit page</description>
 			<name>com.sun.faces.portlet.INIT_EDIT</name>
-			<value>/WEB-INF/springjsf/edit.jsp</value>
+			<value>/WEB-INF/springfaces/edit.jsp</value>
 		</init-param>
 
 		<init-param>
 			<description>Portlet Help page</description>
 			<name>com.sun.faces.portlet.INIT_HELP</name>
-			<value>/WEB-INF/springjsf/help.jsp</value>
+			<value>/WEB-INF/springfaces/help.jsp</value>
 		</init-param>
 
 		<supports>
@@ -64,7 +64,7 @@
 			<portlet-mode>HELP</portlet-mode>
 		</supports>
 		<portlet-info>
-			<title>springjsf</title>
+			<title>springfaces</title>
 		</portlet-info>
 	</portlet>
 

@@ -4,6 +4,6 @@
 <%@ taglib prefix="h" uri="http://java.sun.com/jsf/html"%>
 <f:view>
 	<h:form>
-		<h:outputText value="view page" />
+		<h:outputText value="helpPage@springfaces" />
 	</h:form>
 </f:view>
