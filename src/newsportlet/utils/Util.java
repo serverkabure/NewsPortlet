@@ -1,4 +1,4 @@
-package jsf11portlet.utils;
+package newsportlet.utils;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;

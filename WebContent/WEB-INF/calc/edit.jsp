@@ -4,6 +4,6 @@
 <%@ taglib prefix="h" uri="http://java.sun.com/jsf/html"%>
 <f:view>
 	<h:form>
-		<h:outputText value="edit page" />
+		<h:outputText value="editPage@calc" />
 	</h:form>
 </f:view>

@@ -1,4 +1,4 @@
-package jsf11portlet.jsf11;
+package newsportlet.calc;
 
 import java.io.Serializable;
 
