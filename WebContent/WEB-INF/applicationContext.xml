@@ -15,5 +15,10 @@
 	<bean id="integer" class="java.lang.Integer">
 		<constructor-arg value="1000" />
 	</bean>
+	<bean id="sharedBean" class="newsportlet.commons.SharedBean">
+		<property name="number" value="123"></property>
+		<property name="from" value="spring context"></property>
+		<property name="message" value="hello from spring bean."></property>
+	</bean>
 
 </beans>

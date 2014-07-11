@@ -11,11 +11,18 @@
 			<property-class>java.lang.Integer</property-class>
 			<value>#{integer}</value>
 		</managed-property>
+		<managed-property>
+			<property-name>sharedBean</property-name>
+			<property-class>newsportlet.commons.SharedBean</property-class>
+			<value>#{sharedBean}</value>
+		</managed-property>
 	</managed-bean>
 	<!-- <application> <el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver> 
 		</application> -->
 	<application>
-		<variable-resolver>org.springframework.web.jsf.DelegatingVariableResolver</variable-resolver>
+		<variable-resolver>org.springframework.web.jsf.DelegatingVariableResolver
+			<!-- SpringFramework2.5 -->
+		</variable-resolver>
 		<!-- <locale-config> <default-locale>en</default-locale> <supported-locale>en</supported-locale> 
 			<supported-locale>es</supported-locale> </locale-config> <message-bundle>messages</message-bundle> -->
 	</application>

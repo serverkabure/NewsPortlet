@@ -3,9 +3,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-	<bean id="viewController"
-		class="org.springframework.web.portlet.mvc.ParameterizableViewController">
+	<!-- <bean id="viewController" -->
+	<!-- class="org.springframework.web.portlet.mvc.ParameterizableViewController"> -->
+	<!-- <property name="viewName" value="/WEB-INF/replace/view.jsp" /> -->
+	<!-- </bean> -->
+
+	<bean id="viewController" class="newsportlet.replace.ViewController">
 		<property name="viewName" value="/WEB-INF/replace/view.jsp" />
+		<property name="sharedBean" ref="sharedBean"></property>
 	</bean>
 
 	<bean id="helpController"
