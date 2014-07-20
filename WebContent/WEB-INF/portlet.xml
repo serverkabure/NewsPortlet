@@ -51,4 +51,34 @@
 		</portlet-info>
 	</portlet>
 
+	<portlet>
+		<description>MyFaces1.1-Portlet</description>
+		<portlet-name>links</portlet-name>
+		<portlet-class>org.apache.portals.bridges.jsf.FacesPortlet</portlet-class>
+		<init-param>
+			<description>Portlet init page</description>
+			<name>ViewPage</name>
+			<value>/WEB-INF/links/view.jsp</value>
+		</init-param>
+		<init-param>
+			<description>Portlet edit page</description>
+			<name>EditPage</name>
+			<value>/WEB-INF/links/edit.jsp</value>
+		</init-param>
+		<init-param>
+			<description>Portlet help page</description>
+			<name>HelpPage</name>
+			<value>/WEB-INF/links/help.jsp</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>EDIT</portlet-mode>
+			<portlet-mode>HELP</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>links</title>
+		</portlet-info>
+	</portlet>
+
 </portlet-app>

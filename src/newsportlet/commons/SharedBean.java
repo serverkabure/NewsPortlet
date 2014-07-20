@@ -2,6 +2,12 @@ package newsportlet.commons;
 
 import java.io.Serializable;
 
+/**
+ * JSFポートレットとSpringポートレット間で共有する情報を載せる共有ビーン。
+ * 
+ * @author compaq
+ * 
+ */
 public class SharedBean implements Serializable {
 
 	private static final long serialVersionUID = 1L;

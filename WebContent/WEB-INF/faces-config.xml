@@ -2,28 +2,33 @@
 <!DOCTYPE faces-config PUBLIC "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.1//EN"
                               "http://java.sun.com/dtd/web-facesconfig_1_1.dtd">
 <faces-config>
-	<managed-bean>
-		<managed-bean-name>sessionBean</managed-bean-name>
-		<managed-bean-class>newsportlet.calc.SessionBean</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-		<managed-property>
-			<property-name>number</property-name>
-			<property-class>java.lang.Integer</property-class>
-			<value>#{integer}</value>
-		</managed-property>
-		<managed-property>
-			<property-name>sharedBean</property-name>
-			<property-class>newsportlet.commons.SharedBean</property-class>
-			<value>#{sharedBean}</value>
-		</managed-property>
-	</managed-bean>
-	<!-- <application> <el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver> 
+ <managed-bean>
+  <managed-bean-name>sessionBean</managed-bean-name>
+  <managed-bean-class>newsportlet.calc.SessionBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+   <property-name>number</property-name>
+   <property-class>java.lang.Integer</property-class>
+   <value>#{integer}</value>
+  </managed-property>
+  <managed-property>
+   <property-name>sharedBean</property-name>
+   <property-class>newsportlet.commons.SharedBean</property-class>
+   <value>#{sharedBean}</value>
+  </managed-property>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>linksBean</managed-bean-name>
+  <managed-bean-class>newsportlet.links.LinksBean</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+ </managed-bean>
+ <!-- <application> <el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver> 
 		</application> -->
-	<application>
-		<variable-resolver>org.springframework.web.jsf.DelegatingVariableResolver
-			<!-- SpringFramework2.5 -->
-		</variable-resolver>
-		<!-- <locale-config> <default-locale>en</default-locale> <supported-locale>en</supported-locale> 
+ <application>
+  <variable-resolver>org.springframework.web.jsf.DelegatingVariableResolver
+   <!-- SpringFramework2.5 -->
+  </variable-resolver>
+  <!-- <locale-config> <default-locale>en</default-locale> <supported-locale>en</supported-locale> 
 			<supported-locale>es</supported-locale> </locale-config> <message-bundle>messages</message-bundle> -->
-	</application>
+ </application>
 </faces-config>
